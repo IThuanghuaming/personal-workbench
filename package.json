@@ -1,0 +1,18 @@
+{
+  "name": "personal-workbench",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "build:sites": "node scripts/build.mjs --sites",
+    "validate": "node scripts/validate-artifact.mjs",
+    "check": "npm run build && npm test && npm run validate",
+    "dev": "node --experimental-sqlite scripts/dev.mjs",
+    "start": "node --experimental-sqlite scripts/dev.mjs",
+    "test": "node --experimental-sqlite --test tests/api.test.mjs"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  }
+}

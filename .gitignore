@@ -1,0 +1,13 @@
+dist/
+site.tar.gz
+data/
+.openai/hosting.json
+node_modules/
+.env
+.env.*
+*.local
+*.sqlite*
+*.db
+*.db-wal
+*.db-shm
+*.log
